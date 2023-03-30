@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #323131;
+    padding: 20px 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+}
+
+.title{
+    color: #FFE600;
+    background-color: #323131;
+    
+
+}
