@@ -1,13 +1,19 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  background-color: black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+
 }
 
-.header{
+body {
+    line-height: 1.6;
+}
+
+.header {
     display: flex;
     justify-content: center;
     background-color: #323131;
@@ -16,9 +22,79 @@
     font-size: 20px;
 }
 
-.title{
+.title {
     color: #FFE600;
     background-color: #323131;
-    
 
+
+}
+
+.info-header {
+    font-size: 30px;
+
+}
+
+.main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.score {
+    display: inline;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.sign {
+    display: inline;
+    font-size: 80px;
+    font-weight: bold;
+
+}
+.primary-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playing-arena {
+    display: flex;  
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.score-box {
+    display: inline;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    color: var(--primary-light);
+    font-size: 20px;
 }
