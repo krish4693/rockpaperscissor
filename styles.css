@@ -76,12 +76,13 @@ body {
 }
 
 .buttons{
-    
+    border: none;
+    outline: none;
     margin-top: 50px;
-    
     display: flex;
     justify-content: space-around;
     gap: 10px;
+
     padding-left: 30%;
     padding-right: 30%;
 }
@@ -98,3 +99,18 @@ footer{
     color: var(--primary-light);
     font-size: 20px;
 }
+
+
+  img:hover {
+    filter: hue-rotate(180deg);
+  }
+
+  .button{
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .button-icon{
+    font-size: 60px;
+
+  }
