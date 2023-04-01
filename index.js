@@ -2,8 +2,19 @@ let playerScore = 0
 let computerScore = 0
 let roundWinner = ''
 
+const scoreInfo = document.getElementById('scoreInfo')
+const scoreMessage = document.getElementById('scoreMessage')
+const playerScorePara = document.getElementById('playerScore')
+const computerScorePara = document.getElementById('computerScore')
 const playerSign = document.getElementById('playerSign')
-const computerSign=document.getElementById('sign')
+const computerSign = document.getElementById('computerSign')
+const rockBtn = document.getElementById('rockBtn')
+const paperBtn = document.getElementById('paperBtn')
+const scissorsBtn = document.getElementById('scissorsBtn')
+const endgameModal = document.getElementById('endgameModal')
+const endgameMsg = document.getElementById('endgameMsg')
+const overlay = document.getElementById('overlay')
+const restartBtn = document.getElementById('restartBtn')
 
 
 function playRound(playerSelection, computerSelection) {
@@ -53,13 +64,26 @@ function updateChoices(playerSelection, computerScore) {
   }
 }
 
-function updateScore(){
-    if(roundWinner==='tie')
-
+function getRandomChoice(){
+    let radomNumber=Math.floor(Math.random() * 3)
+    switch(randomNumber){
+        case 0:
+            return 'ROCK'
+            break
+        case 1:
+            return 'PAPER'
+            break
+        case 2:
+            return 'SCISSOR'
+            break
+    }
+}
 
 
 const computerSelection = getRandomChoice()
 playRound(playerSelection, computerSelection)
+
+
 
 
 
