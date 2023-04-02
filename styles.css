@@ -9,6 +9,9 @@
 
 }
 
+main{
+    font-family: 'Comfortaa', cursive;
+}
 body {
     line-height: 1.6;
 }
@@ -51,6 +54,7 @@ body {
     display: inline;
     font-size: 80px;
     font-weight: bold;
+    /* background-color: white; */
 
 }
 .primary-info {
@@ -106,11 +110,25 @@ footer{
   }
 
   .button{
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 10px;
+    border: none;
+
+  }
+  .button:hover{
+    background-color: rgb(65, 63, 63);
   }
 
   .button-icon{
-    font-size: 60px;
+    font-size: 80px;
+    font-weight: bold;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgb(51, 47, 47);
+    border-radius: 10px;
 
+  }
+  .button-icon:hover{
+    background-color: rgb(58, 55, 55);
   }
