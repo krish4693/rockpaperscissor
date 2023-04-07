@@ -8,10 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
@@ -38,17 +39,11 @@
                 </div>
             </div>
         </div>
-
-
         </div>
-
-
-
-
         </div>
     </main>
     <div class="buttons">
-        <button  class="button" id="rockBtn">
+        <button class="button" id="rockBtn">
             <p class="button-icon">✊</p>
         </button>
         <button class="button" id="paperBtn">
@@ -60,8 +55,19 @@
 
     </div>
     <footer>
-        <p>Built with ♡ by Krishnanand U (<script>document.write(new Date().getFullYear())</script>)</p>
+        <p>Built with ♡ by <a href="https://github.com/krish4693" target="_blank">Krishnanand U</a> (
+            <script>document.write(new Date().getFullYear())</script>)
+        </p>
     </footer>
+    <div class="modal" id="endgameModal">
+        <div class="bufferModal">
+            <p class="modal-title" id="endgameMsg">You won</p>
+            <button class="btn btn-restart" id="restartBtn">Play Again</button>
+            
+
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
     <script src="index.js"></script>
 </body>
 

@@ -12,6 +12,14 @@ const computerSign = document.getElementById('computerSign')
 const rockBtn = document.getElementById('rockBtn')
 const paperBtn = document.getElementById('paperBtn')
 const scissorsBtn = document.getElementById('scissorsBtn')
+const endgameModal = document.getElementById('endgameModal')
+const endgameMsg = document.getElementById('endgameMsg')
+const overlay = document.getElementById('overlay')
+const restartBtn = document.getElementById('restartBtn')
+
+endgameModal.classList.remove('active')
+overlay.classList.remove('active')
+
 
 rockBtn.addEventListener('click',()=>{
   handleClic('ROCK')
@@ -28,8 +36,8 @@ scissorsBtn.addEventListener('click',()=>{
 function handleClic(playerSelection){
   // alert(playerSelection)
   if (isGameOver()) {
-    // openEndgameModal()
-    alert('game over')
+    openEndgameModal()
+    // alert('game over')
     return
   }
   playerSign.textContent=returnSign(playerSelection)
@@ -37,8 +45,8 @@ function handleClic(playerSelection){
   computerSign.textContent=returnSign(computerSelection)
   playRound(playerSelection,computerSelection)
   if (isGameOver()) {
-    // openEndgameModal()
-    alert('game over')
+    openEndgameModal()
+    // alert('game over')
     return
   }
 
@@ -110,8 +118,11 @@ function updateScoreMessage(roundWinner)
 }
 
 function isGameOver(){
-  if(computerScore==5||playerScore==5){
-    return true
-  }
-  else false
+
+  return playerScore===5||computerScore===5
+}
+
+function openEndgameModal(){
+  endgameModal.classList.add('active')
+  overlay.classList.add('active')
 }
