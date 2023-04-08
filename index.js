@@ -31,7 +31,8 @@ scissorsBtn.addEventListener('click',()=>{
   handleClic("SCISSORS")
 });
 
-
+restartBtn.addEventListener('click', restartGame)
+overlay.addEventListener('click', closeEndgameModal)
 
 function handleClic(playerSelection){
   // alert(playerSelection)
@@ -126,3 +127,9 @@ function openEndgameModal(){
   endgameModal.classList.add('active')
   overlay.classList.add('active')
 }
+
+function closeEndgameModal(){
+  endgameModal.classList.remove('active')
+  overlay.classList.remove('active')
+}
+
