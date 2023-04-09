@@ -1,3 +1,5 @@
+For live demo click [here](https://rock-paper-scissor-web.netlify.app/)
+
 This is a small javascript website built to learn javascript by trying to recreate [this](https://michalosman.github.io/rock-paper-scissors/)
 
 All rights of the project goes to [michalsoman](https://github.com/michalosman)
