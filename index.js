@@ -41,6 +41,7 @@ function handleClic(playerSelection){
     // alert('game over')
     return
   }
+  // alert('HEllo')
   playerSign.textContent=returnSign(playerSelection)
   const computerSelection=getRandomChoice()
   computerSign.textContent=returnSign(computerSelection)
@@ -133,3 +134,14 @@ function closeEndgameModal(){
   overlay.classList.remove('active')
 }
 
+function restartGame() {
+  playerScore=0
+  computerScore=0
+  scoreMessage.textContent='First to win 5 points wins!'
+  playerScorePara.textContent='Player 1: 0'
+  computerScorePara.textContent='Computer: 0'
+  playerSign.textContent='❔'
+  computerSign.textContent='❔'
+  endgameModal.classList.remove('active')
+  overlay.classList.remove('active')
+}
